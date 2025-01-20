@@ -23,7 +23,6 @@ function repositoryState() {
         },
         filterList (){
             this.data = this.data.sort((a, b) => a.owner.login.toUpperCase() > b.owner.login.toUpperCase() ? 1 : -1)
-            console.log(toJS(this.data))
         }
     }, {}, { autoBind: true })
 }
